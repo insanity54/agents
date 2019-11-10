@@ -1,7 +1,7 @@
 <template>
-  <div class="terminal-output">
-
-  </div>
+  <pre class="terminal-output">
+    {{ output }}
+  </pre>
 </template>
 
 
@@ -10,13 +10,13 @@
 
 export default {
   name: 'TerminalOutput',
-  data: function () {
-    return {
-    }
-  },
   components: {
   },
   props: {
+    output: {
+      type: String,
+      required: true
+    }
   },
   methods: {
   },
@@ -24,3 +24,21 @@ export default {
   }
 }
 </script>
+
+
+<style scoped>
+  pre.terminal-output {
+    white-space: pre-wrap;
+    /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;
+    /* Mozilla, since 1999 */
+    white-space: -pre-wrap;
+    /* Opera 4-6 */
+    white-space: -o-pre-wrap;
+    /* Opera 7 */
+    word-wrap: break-word;
+    /* Internet Explorer 5.5+ */
+    width: 100%;
+    text-align: left;
+  }
+</style>

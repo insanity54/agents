@@ -16,11 +16,12 @@ export default {
   props: {
     prompt: {
       type: String,
-      required: false,
-      default: 'root@localhost:~#'
+      required: true
     }
   },
   methods: {
+  },
+  computed: {
   },
   mounted() {
   }

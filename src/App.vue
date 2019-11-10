@@ -3,7 +3,6 @@
     <div class="container">
       <Main :begun="begun"/>
       <Game v-if="begun" :begun="begun"/>
-      <button v-if="!begun" type="button" class="begin" @click="begin()">Begin</button>
     </div>
   </div>
 </template>
@@ -47,8 +46,11 @@ body {
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
+  width: 100vw;
+  height: 100vh;
 }
 .container {
-  max-width: 1000px;
+  width: 100%;
+  height: 100%;
 }
 </style>
