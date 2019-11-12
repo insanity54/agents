@@ -1,0 +1,98 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="cagi_data" version="1.3.0" audacityversion="2.2.2" sel0="0.0000000000" sel1="0.0000000000" vpos="0" h="0.0000000000" zoom="68.6668696079" rate="44100.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
+	<tags>
+		<tag name="Software" value="Adobe Audition CC 2018.1 (Windows)"/>
+		<tag name="ARTIST" value="Hj. Malthaner"/>
+		<tag name="YEAR" value="2018-12-29T11:07:58-05:00"/>
+	</tags>
+	<wavetrack name="hjm-shield_hum_50" channel="2" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="0" rate="44100" gain="2.238721" pan="0.0" colorindex="0">
+		<waveclip offset="8.34462585" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="441000">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1f0d6.au" len="262144" min="-0.20206" max="0.202051" rms="0.074549"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="eff1ff34.au" len="178856" min="-0.202069" max="0.202122" rms="0.107191"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Recording_4" channel="2" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="0" rate="16000" gain="0.562341" pan="0.0" colorindex="0">
+		<waveclip offset="18.07937500" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="28731">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1ff9a.au" len="28731" min="-0.998024" max="0.871029" rms="0.058981"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="455438__under-the-hood__skipping-heartbeat" channel="0" linked="1" mute="0" solo="0" height="150" minimized="0" isSelected="0" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="2.53397917" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="1704927">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1f364.au" len="262144" min="-0.982981" max="0.731797" rms="0.100403"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="eff1f23c.au" len="262144" min="-0.376665" max="0.701122" rms="0.087504"/>
+				</waveblock>
+				<waveblock start="524288">
+					<simpleblockfile filename="eff1ffff.au" len="262144" min="-0.394857" max="0.715337" rms="0.08474"/>
+				</waveblock>
+				<waveblock start="786432">
+					<simpleblockfile filename="eff1f339.au" len="262144" min="-0.357013" max="0.715744" rms="0.085721"/>
+				</waveblock>
+				<waveblock start="1048576">
+					<simpleblockfile filename="eff1f099.au" len="262144" min="-0.350808" max="0.69742" rms="0.082563"/>
+				</waveblock>
+				<waveblock start="1310720">
+					<simpleblockfile filename="eff1ff02.au" len="262144" min="-0.338191" max="0.709755" rms="0.081992"/>
+				</waveblock>
+				<waveblock start="1572864">
+					<simpleblockfile filename="eff1f709.au" len="132063" min="-0.328239" max="0.643878" rms="0.081924"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="455438__under-the-hood__skipping-heartbeat" channel="1" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="0" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="2.53397917" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="1704927">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1fde1.au" len="262144" min="-0.982981" max="0.731797" rms="0.100403"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="eff1f786.au" len="262144" min="-0.376665" max="0.701122" rms="0.087504"/>
+				</waveblock>
+				<waveblock start="524288">
+					<simpleblockfile filename="eff1f22d.au" len="262144" min="-0.394857" max="0.715337" rms="0.08474"/>
+				</waveblock>
+				<waveblock start="786432">
+					<simpleblockfile filename="eff1f86d.au" len="262144" min="-0.357013" max="0.715744" rms="0.085721"/>
+				</waveblock>
+				<waveblock start="1048576">
+					<simpleblockfile filename="eff1fcc3.au" len="262144" min="-0.350808" max="0.69742" rms="0.082563"/>
+				</waveblock>
+				<waveblock start="1310720">
+					<simpleblockfile filename="eff1f3d0.au" len="262144" min="-0.338191" max="0.709755" rms="0.081992"/>
+				</waveblock>
+				<waveblock start="1572864">
+					<simpleblockfile filename="eff1f050.au" len="132063" min="-0.328239" max="0.643878" rms="0.081924"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="319253__adharca__low-chant" channel="2" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="1" rate="16000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.30581250" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="208568">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1f186.au" len="208568" min="-0.39566" max="0.366516" rms="0.062346"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>

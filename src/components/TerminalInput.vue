@@ -7,6 +7,8 @@
     class="terminal-input"
     type="text"
     @keyup.enter="processInput"
+    @keyup.up="prefillLastCommand"
+    @keyup.down="prefillNextCommand"
   >
 </template>
 
@@ -18,12 +20,17 @@ export default {
   name: 'TerminalInput',
   data: function () {
     return {
-      inp: this.input
+      inp: '',
+      commandIndex: 0
     }
   },
   components: {
   },
   props: {
+    terminalRows: {
+      type: Array,
+      required: true
+    },
     shell: {
       type: Object,
       required: true
@@ -42,14 +49,26 @@ export default {
     }
   },
   methods: {
-    processInput: function (e) {
-      if (e.keyCode === 13) {
-        this.processCommand(this.inp);
-      }
+    processInput: function () {
+      this.processCommand(this.inp);
+      this.commandIndex++;
+    },
+    prefillLastCommand: function () {
+      if (this.commandIndex === 0) return;
+      this.commandIndex--;
+      this.inp = JSON.parse(JSON.stringify(this.terminalRows[this.commandIndex].input));
+    },
+    prefillNextCommand: function () {
+      if (this.commandIndex === this.terminalRows.length-1) return;
+      this.commandIndex++;
     }
   },
   computed: {
 
+  },
+  created() {
+    this.commandIndex = (this.terminalRows.length-1);
+    // this.inp = this.input;
   },
   mounted() {
 

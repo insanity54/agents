@@ -2,7 +2,13 @@
   <div class="terminal-row">
     <div class="terminal-input-row">
       <TerminalPrompt :prompt="prompt"/>
-      <TerminalInput :enabled="enabled" :input="input" :shell="shell" :processCommand="processCommand"/>
+      <TerminalInput
+        :enabled="enabled"
+        :input="input"
+        :shell="shell"
+        :processCommand="processCommand"
+        :terminalRows="terminalRows"
+      />
     </div>
     <TerminalOutput :output="output"/>
   </div>
@@ -19,7 +25,6 @@ export default {
   name: 'TerminalRow',
   data: function () {
     return {
-
     }
   },
   components: {
@@ -28,6 +33,10 @@ export default {
     TerminalPrompt
   },
   props: {
+    terminalRows: {
+      type: Array,
+      required: true
+    },
     shell: {
       type: Object,
       required: true

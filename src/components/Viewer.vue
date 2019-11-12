@@ -37,7 +37,6 @@
     computed: {
       viewContent: function () {
         if (this.view === 'msg1') {
-          console.log('viu contento');
           return messageOne;
         }
       }
@@ -46,7 +45,6 @@
       this.$root.$on('viewer', data => {
         let mediaType = data.mediaType;
         let index = data.index;
-        console.log(`mediaType: ${mediaType}, index: ${index}`)
         if (mediaType === 'msg') {
           if (index === 1) {
             this.view = messageOne;

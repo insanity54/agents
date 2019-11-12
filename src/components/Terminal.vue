@@ -10,6 +10,7 @@
       :shell="shell"
       v-for="row in terminalRows"
       :key="row.id"
+      :terminalRows="terminalRows"
       ></TerminalRow>
     </div>
   </div>
@@ -60,6 +61,7 @@ export default {
         enabled: true,
         prompt: `${this.shell.env.USER}@${this.shell.env.HOSTNAME}:~#`
       });
+      this.terminalRows[lastIndex].input = value;
       this.terminalRows[lastIndex].output = this.shell.run(value);
       this.terminalRows[lastIndex].enabled = false;
     },
